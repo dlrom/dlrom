@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>AndroidX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="AndroidX">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="AndroidX">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AndroidX">
+  
+    <link rel="alternate" href="/atom.xml" title="AndroidX" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">AndroidX</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-mido" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/01/mido/" class="article-date">
+  <time datetime="2017-12-01T03:14:15.000Z" itemprop="datePublished">2017-12-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Rom/">Rom</a>►<a class="article-category-link" href="/categories/Rom/Mido/">Mido</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/01/mido/">红米Note4x教程（总集篇）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="红米Note4x教程（总集篇）"><a href="#红米Note4x教程（总集篇）" class="headerlink" title="红米Note4x教程（总集篇）"></a>红米Note4x教程（总集篇）</h2><h3 id="一、解锁篇"><a href="#一、解锁篇" class="headerlink" title="一、解锁篇"></a>一、解锁篇</h3><ol>
+<li>进入<a href="http://www.miui.com/unlock" target="_blank" rel="noopener">解锁页面</a>申请解锁权限 ，申请后等待审核通过即可。如果已经有权限，页面会自动跳转至解锁工具下载页面。</li>
+</ol>
+<p><img src="http://ww1.sinaimg.cn/large/005tHpUKgy1fl43mjjos9j30og0iyn08.jpg" alt="解锁"></p>
+<ol>
+<li><p>在需要解锁的设备中登录已经具备解锁权限的小米账号，并进入“设置 -&gt; 开发者选项 -&gt; 设备解锁状态”中绑定账号和设备。</p>
+</li>
+<li><p>登录成功后，手动进入Bootloader模式（关机后，同时按住开机键和音量下键）。</p>
+</li>
+<li><p>下载<a href="http://miuirom.xiaomi.com/rom/u265827351/2.3.803.10/miflash_unlock-2.3.803.10.zip" target="_blank" rel="noopener">小米解锁工具</a>，登录相同的具备解锁权限的小米账号，并通过USB连接手机。</p>
+</li>
+<li><p>点击PC端解锁工具的“解锁”按钮，预计10s左右即可完成。</p>
+</li>
+</ol>
+<h3 id="二、刷入第三方Recovery"><a href="#二、刷入第三方Recovery" class="headerlink" title="二、刷入第三方Recovery"></a>二、刷入第三方Recovery</h3><p><em>(以TWRP为例)</em></p>
+<ol>
+<li><p>将手机与电脑连接。</p>
+</li>
+<li><p>下载群文件Recovery压缩包。</p>
+</li>
+</ol>
+<p><img src="http://ww1.sinaimg.cn/large/005tHpUKgy1fl2p73qvw0j30rc0lfwhd.jpg" alt="rec文件"></p>
+<ol>
+<li>解压之后运行文件目录下的.bat文件,依照提示操作即可。</li>
+</ol>
+<p><img src="http://ww1.sinaimg.cn/large/005tHpUKgy1fl2ontjfajj30qu0a7aah.jpg" alt="bat文件"></p>
+<p><em>当然你也可以选择手动运行以下代码以刷入Recovery</em></p>
+<blockquote>
+<p>fastboot.exe devices</p>
+<p>fastboot.exe flash recovery cofface_redminote4x_recovery0313.img</p>
+<p>fastboot.exe boot cofface_redminote4x_recovery0313.img</p>
+</blockquote>
+<ol>
+<li>当你看到以下提示即表示TWRP已成功刷入，手机会自动重启至Recovery界面。</li>
+</ol>
+<blockquote>
+<p>恭喜你成功导入了recovery！！</p>
+<p>耐心稍等片刻，手机会自动重启，按任意键关闭此窗口。</p>
+</blockquote>
+<h3 id="三、TWRP设置与刷入ROM包"><a href="#三、TWRP设置与刷入ROM包" class="headerlink" title="三、TWRP设置与刷入ROM包"></a>三、TWRP设置与刷入ROM包</h3><ol>
+<li>TWRP初始设置如图。</li>
+</ol>
+<p><img src="http://ww1.sinaimg.cn/large/005tHpUKgy1fl7jiikabjj30u01hcwg5.jpg" alt="rec界面"></p>
+<ol>
+<li>点击“安装”，在文件中找到下载的zip刷机包，点击选择它。</li>
+</ol>
+<p><img src="http://ww1.sinaimg.cn/large/005tHpUKgy1fl7jj8ru8dj30u01hcn0t.jpg" alt="选择"></p>
+<ol>
+<li>滑动确认刷入，或者你也可以选择添加更多卡刷包一起刷入（比如gapps，root包和字体包之类的）。</li>
+</ol>
+<p><img src="http://ww1.sinaimg.cn/large/005tHpUKgy1fl7jjua2g0j30u01hcjv8.jpg" alt="刷入"></p>
+<ol>
+<li>刷入之后重启即可。</li>
+</ol>
+<p><em><font color="red" size="7">WARNING：</font>双清会清除及应用数据，刷机前请注意做好备份。</em></p>
+<h3 id="四、ROOT篇"><a href="#四、ROOT篇" class="headerlink" title="四、ROOT篇"></a>四、ROOT篇</h3><p><em>（root篇分为两个部分，一是第三方类原生的root，另一个是MIUI的root）</em></p>
+<h4 id="（1）类原生ROM-第三方Recovery（TWRP）"><a href="#（1）类原生ROM-第三方Recovery（TWRP）" class="headerlink" title="（1）类原生ROM+第三方Recovery（TWRP）"></a>（1）类原生ROM+第三方Recovery（TWRP）</h4><ul>
+<li>此类root与刷入普通zip步骤一样，同样是在Recovery界面选择安装，找到root包刷入即可。</li>
+<li>较常用的root工具有Magisk SU和Super SU。</li>
+<li>推荐使用Magisk，<del>才不是因为Super SU被中国公司收购了呢。</del></li>
+<li>当然还是看个人喜好和习惯了，<del>你要用Super SU咱也没法拦着对吧（笑）。</del><h4 id="（2）MIUI-官方Recovery"><a href="#（2）MIUI-官方Recovery" class="headerlink" title="（2）MIUI+官方Recovery"></a>（2）MIUI+官方Recovery</h4></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/12/01/mido/" data-id="cjanj6z0e0001kkoz3u38xqef" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/01/hello-world/" class="article-date">
+  <time datetime="2017-12-01T02:31:37.683Z" itemprop="datePublished">2017-12-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/01/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/12/01/hello-world/" data-id="cjanj6z070000kkozp02covck" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Rom/">Rom</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Rom/Mido/">Mido</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/12/01/mido/">红米Note4x教程（总集篇）</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/01/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 AndroidX<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
